@@ -171,12 +171,11 @@ def metrics(user, recommended_items, pos_items, k_list):
     MRR = 0.0
     DCG = 0.0
     
-    larger3_n = len(test_u_lists[user.item()])
     n_p = len(pos_items)
     #print(n_p)
     topk_result = {}
     
-    if n_p > 0 and larger3_n > 0:
+    if n_p > 0 :
         for k in k_list:
             correct_item_count = 0
             MRR = 0.0
